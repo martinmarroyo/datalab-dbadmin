@@ -1,0 +1,12 @@
+{
+    "Servers": {
+        "1": {
+            "Name": "DataLab-DB",
+            "Group": "DL-Group1",
+            "Port": 5432,
+            "Username": "datalab",
+            "Host": "db",
+            "MaintenanceDB": "postgres"
+        }
+    }
+}
