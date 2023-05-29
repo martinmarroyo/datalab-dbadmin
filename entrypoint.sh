@@ -80,8 +80,9 @@ fi
 
 # Setup connection to DataLab-DB
 echo "Setting up connection to DataLab-DB"
-/venv/bin/python3 /pgadmin4/setup.py --load-servers /pgadmin4/datalab-connection.json --user admin@datalab.com
+/venv/bin/python3 /pgadmin4/setup.py --replace --load-servers /pgadmin4/datalab-connection.json --user admin@datalab.com
 echo "Connected to DataLab-DB"
+
 # Start Postfix to handle password resets etc.
 if [ -z "${PGADMIN_DISABLE_POSTFIX}" ]; then
     sudo /usr/sbin/postfix start
